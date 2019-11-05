@@ -256,3 +256,28 @@ const multiply = (a, b) => {
 };
 */
 
+// TITLE: 12. Summation
+// DESCRIPTION: Write a program that finds the summation of every number from 1 to num. 
+// The number will always be a positive integer greater than 0.
+
+// EXAMPLE/QUESTION: 
+// summation(2) -> 3
+// 1 + 2
+
+// summation(8) -> 36
+// 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+  
+// SOLUTION:
+/*
+const sumMe = (num) => {
+    let arr = []
+    for(i = 1; i <= num; i++){
+        arr.push(i)
+    }
+    reducer = (pv, cv) => pv + cv
+    return console.log(arr.reduce(reducer,0))
+}
+
+sumMe(8)
+sumMe(2)
+*/
