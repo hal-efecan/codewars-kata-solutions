@@ -41,7 +41,7 @@ TEST:
 
 myCalc([1,-4,7,12]) //,20
 myCalc([1,-2,3,4,5]) //,13);
-myCalc([]) //,0);
+console.log(myCalc([])) //,0);
 myCalc([-1,-2,-3,-4,-5]) //,0);
 myCalc([-1,2,3,4,-5]) //,9);
 */
@@ -331,4 +331,29 @@ const boolToWord = bool => {
 TEST:
 console.log(boolToWord(true)) // 'Yes')
 console.log(boolToWord(false)) // 'No')
+*/
+
+// TITLE: 15. A Needle in the Haystack
+// DESCRIPTION: Write a function findNeedle() that takes an array full of junk but containing one "needle"
+// After your function finds the needle it should return a message (as a string) that says:
+// "found the needle at position " plus the index it found the needle, so: 
+
+// EXAMPLE/QUESTION: 
+// findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+// should return "found the needle at position 5"
+
+// SOLUTION:
+/*
+const findNeedle = (arr) => {
+    for(i=0; i<arr.length; i++){
+        if(arr[i] === 'needle'){
+            return console.log(`found the needle at position ${arr.indexOf(arr[i])}`)
+        }
+    }
+}
+
+TEST:
+
+var haystack_1 = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]
+findNeedle(haystack_1)
 */
