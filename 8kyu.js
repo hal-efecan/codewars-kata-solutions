@@ -317,4 +317,18 @@ console.log(basicOp('+', 4, 7)) //, 11);
 console.log(basicOp('-', 15, 18)) //, -3);
 console.log(basicOp('*', 5, 5)) //, 25);
 console.log(basicOp('/', 49, 7)) //, 7);
+*/  
+
+// TITLE: 14. Convert boolean values to strings 'Yes' or 'No'.
+// DESCRIPTION: Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+  
+// SOLUTION:
+/*
+const boolToWord = bool => {
+   return bool === true ? 'Yes' : 'No'
+}
+
+TEST:
+console.log(boolToWord(true)) // 'Yes')
+console.log(boolToWord(false)) // 'No')
 */
