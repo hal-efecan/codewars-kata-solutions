@@ -357,3 +357,22 @@ TEST:
 var haystack_1 = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]
 findNeedle(haystack_1)
 */
+
+// TITLE: 16. Convert a Number to a String!
+
+// DESCRIPTION: We need a function that can transform a number into a string.
+// What ways of achieving this do you know?
+
+// EXAMPLE/QUESTION: 
+// numberToString(123); // returns '123';`   
+// numberToString(999); // returns '999';`
+
+// SOLUTION:
+/*
+const numberToString = num => {
+    return num.toString()
+}
+
+TEST:
+numberToString(1)
+*/
