@@ -483,3 +483,48 @@ TEST:
 Test.assertEquals(new Ball().value, "regular");
 Test.assertEquals(new Ball("super").value, "super");
 */
+
+// TITLE: 20. Color Ghost
+
+// DESCRIPTION: Create a class Ghost
+// Ghost objects are instantiated without any arguments.
+// Ghost objects are given a random color attribute of white" or "yellow" or "purple" or "red" when instantiated
+
+// EXAMPLE/QUESTION: 
+// ghost = new Ghost();
+// ghost.color //=> "white" or "yellow" or "purple" or "red"
+
+// SOLUTION:
+/*
+class Ghost {
+    constructor(){
+    }
+    get color(){
+        let colNum = (Math.random())*4
+        let col = Math.ceil(colNum)
+        if(col === 1){
+            return "yellow"
+        }
+        if(col === 2){
+            return "purple"
+        }
+        if(col === 3){
+            return "red"
+        }
+        if(col === 4){
+            return "white"
+        }
+    }
+}
+
+TEST:
+let ghost1 = new Ghost()
+let ghost2 = new Ghost()
+let ghost3 = new Ghost()
+let ghost4 = new Ghost()
+
+console.log(ghost1.color)
+console.log(ghost2.color)
+console.log(ghost3.color)
+console.log(ghost4.color)
+*/
