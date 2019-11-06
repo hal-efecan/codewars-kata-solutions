@@ -9,22 +9,14 @@
 SOLUTION:
 
 getCount = str => {
-    var vowelsCount = 0;
-  
-    for(i=0; i<str.length; i++){
-        if(str[i] === 'a'){
-            vowelsCount++
-        } if(str[i] === 'e'){
-            vowelsCount++
-        } if(str[i] === 'i'){
-            vowelsCount++
-        } if(str[i] === 'o'){
-            vowelsCount++
-        } if(str[i] === 'u'){
-            vowelsCount++
-        }
-    }  
-  return vowelsCount;
+        var vowelsCount = 0;
+    
+        for(i=0; i<str.length; i++){
+            if(str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u'){
+                vowelsCount++
+        }  
+    }
+    return console.log(vowelsCount);
 }
 
 getCount("abracadabra") //, 5)
