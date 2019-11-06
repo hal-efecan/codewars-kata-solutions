@@ -444,3 +444,42 @@ class Ship {
 let Titanic = new Ship(0,0)
 
 */
+
+// TITLE: 19. Regular Ball Super Ball
+
+// DESCRIPTION: Create a class Ball.
+// Ball objects should accept one argument for "ball value" when instantiated.
+// If no arguments are given, ball objects should instantiate with a "ball value" of "regular."
+
+// EXAMPLE/QUESTION: ball1 = new Ball();
+// ball2 = new Ball("super");
+
+// ball1.value     //=> "regular"
+// ball2.value     //=> "super"
+
+// SOLUTION:
+/*
+class Ball {
+    constructor(value){
+        this.value = value
+        }
+        get ballType(){
+            if(this.value === undefined){
+                return 'regular'
+            } else {
+                return `${this.value}`
+            }
+        }
+}
+
+let ball1 = new Ball()
+let ball2 = new Ball('super');
+
+console.log(ball1.type)
+console.log(ball2.type)
+
+TEST:
+
+Test.assertEquals(new Ball().value, "regular");
+Test.assertEquals(new Ball("super").value, "super");
+*/
