@@ -27,12 +27,12 @@ myArray("I love arrays they are my favorite")
 // Note: if there is nothing to sum, the sum is default to 0.
 
 /*
-const arr = [1,-4,7,12]
+const numbers = [1,-4,7,12]
 
 SOLUTION:
 
-myCalc = arr => {
-    let arr1 = arr.map(item => item >= 0 ? item : 0)
+myCalc = numbers => {
+    let arr1 = numbers.map(item => item >= 0 ? item : 0)
     let sum = arr1.reduce((pv, cv) => pv + cv, 0)
     return sum
 }
@@ -92,8 +92,8 @@ removeChar = str => {
     myArray.pop()
     myArray.push("'")
     myArray.unshift("'")
-    let arr = myArray.join('')
-    console.log(arr)
+    let numbers = myArray.join('')
+    console.log(numbers)
 };
 
 TEST:
@@ -168,9 +168,9 @@ console.log(makeNegative(0.12)) // return -0.12
 /*
 SOLUTION:
 
-const smallest = (arr) => {
-    arr.sort((a, b) => a - b)
-    let result = arr.slice(0,1)
+const smallest = (numbers) => {
+    numbers.sort((a, b) => a - b)
+    let result = numbers.slice(0,1)
     let answer = parseInt(result)
     return console.log(answer)
 }
@@ -270,12 +270,12 @@ const multiply = (a, b) => {
 // SOLUTION:
 /*
 const sumMe = (num) => {
-    let arr = []
+    let numbers = []
     for(i = 1; i <= num; i++){
-        arr.push(i)
+        numbers.push(i)
     }
     reducer = (pv, cv) => pv + cv
-    return console.log(arr.reduce(reducer,0))
+    return console.log(numbers.reduce(reducer,0))
 }
 
 sumMe(8)
@@ -344,10 +344,10 @@ console.log(boolToWord(false)) // 'No')
 
 // SOLUTION:
 /*
-const findNeedle = (arr) => {
-    for(i=0; i<arr.length; i++){
-        if(arr[i] === 'needle'){
-            return console.log(`found the needle at position ${arr.indexOf(arr[i])}`)
+const findNeedle = (numbers) => {
+    for(i=0; i<numbers.length; i++){
+        if(numbers[i] === 'needle'){
+            return console.log(`found the needle at position ${numbers.indexOf(numbers[i])}`)
         }
     }
 }
@@ -375,4 +375,25 @@ const numberToString = num => {
 
 TEST:
 numberToString(1)
+*/
+
+// TITLE: 16. Square(n) Sum
+
+// DESCRIPTION: Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+// EXAMPLE/QUESTION: For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+
+// SOLUTION:
+/*
+const squareSum = numbers => {
+    let newArr = []
+    for (i=0; i< numbers.length; i++){
+        let square = numbers[i] * numbers[i]
+        newArr.push(square)
+    }
+    reducer = (pv,cv) => pv + cv
+    return newArr.reduce(reducer,0)
+}
+
+console.log(squareSum([1, 2, 2]))
 */
