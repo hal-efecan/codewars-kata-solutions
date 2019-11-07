@@ -16,7 +16,7 @@ getCount = str => {
                 vowelsCount++
         }  
     }
-    
+
     return console.log(vowelsCount);
 }
 
