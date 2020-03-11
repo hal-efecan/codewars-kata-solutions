@@ -1,2 +1,7 @@
-My solutions to CadeWars Katas -
-This is a first pass at solving each question & will eventually come back to refactor the code to make it more concise.
+# My Kata Solutions
+
+## Codewars Github page 
+
+[Codewars GitHub_Page](https://github.com/codewars/codewars.com/wiki "Codewars")  
+
+This is my first pass at solving each kata. 
