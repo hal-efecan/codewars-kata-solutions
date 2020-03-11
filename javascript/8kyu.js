@@ -74,13 +74,13 @@ opposite = (number) => {
 TEST:
 
 opposite(-15)
-opposite(1) 
+opposite(1)
 opposite(14)
 opposite(-34)
 */
 
 // TITLE: 4. Remove First and Last Character
-// DESCRIPTION: The goal is to create a function that removes the first and last characters of a string. 
+// DESCRIPTION: The goal is to create a function that removes the first and last characters of a string.
 // You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
 
 /*
@@ -177,7 +177,7 @@ const smallest = (numbers) => {
 
 TEST:
 
-smallest([34, -345, -1, 100])   
+smallest([34, -345, -1, 100])
 */
 
 // QUESTION: 8. Remove String Spaces
@@ -197,13 +197,13 @@ noSpace('8 j 8   mBliB8g  imjB8B8  jl  B')
 noSpace('8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd')
 */
 
-// TITLE: 9. COUNTING SHEEP 
-// QUESTION: Consider an array of sheep where some sheep may be missing from their place. We need a function that counts the 
+// TITLE: 9. COUNTING SHEEP
+// QUESTION: Consider an array of sheep where some sheep may be missing from their place. We need a function that counts the
 // number of sheep present in the array (true means present).
 
 // EXAMPLE:
 
-// let arr0 = 
+// let arr0 =
 // [true,  true,  true,  false,
 //   true,  true,  true,  true ,
 //   true,  false, true,  false,
@@ -226,8 +226,8 @@ TEST:
 countSheeps(arr0)
 */
 
-// TITLE: 10. even or odd 
-// QUESTION: Create a function (or write a script in Shell) that takes an integer as an argument and returns "Even" 
+// TITLE: 10. even or odd
+// QUESTION: Create a function (or write a script in Shell) that takes an integer as an argument and returns "Even"
 // for even numbers or "Odd" for odd numbers.
 
 // SOLUTION:
@@ -241,14 +241,14 @@ const even_or_odd = number => {
 }
 */
 
-// TITLE: 11. Multiply 
+// TITLE: 11. Multiply
 // DESCRIPTION: The code has a bug. Try to figure out why.
 
-// EXAMPLE/QUESTION: 
+// EXAMPLE/QUESTION:
 // function multiply(a, b){
 //     a * b
 //   }
-  
+
 // SOLUTION:
 /*
 const multiply = (a, b) => {
@@ -257,16 +257,16 @@ const multiply = (a, b) => {
 */
 
 // TITLE: 12. Summation
-// DESCRIPTION: Write a program that finds the summation of every number from 1 to num. 
+// DESCRIPTION: Write a program that finds the summation of every number from 1 to num.
 // The number will always be a positive integer greater than 0.
 
-// EXAMPLE/QUESTION: 
+// EXAMPLE/QUESTION:
 // summation(2) -> 3
 // 1 + 2
 
 // summation(8) -> 36
 // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
-  
+
 // SOLUTION:
 /*
 const sumMe = (num) => {
@@ -287,12 +287,12 @@ sumMe(2)
 // The function should take three arguments - operation(string/char), value1(number), value2(number).
 // The function should return result of numbers after applying the chosen operation.
 
-// EXAMPLE/QUESTION: 
+// EXAMPLE/QUESTION:
 // basicOp('+', 4, 7)         // Output: 11
 // basicOp('-', 15, 18)       // Output: -3
 // basicOp('*', 5, 5)         // Output: 25
 // basicOp('/', 49, 7)        // Output: 7
-  
+
 // SOLUTION:
 /*
 const basicOp = (operation, value1, value2) => {
@@ -317,11 +317,11 @@ console.log(basicOp('+', 4, 7)) //, 11);
 console.log(basicOp('-', 15, 18)) //, -3);
 console.log(basicOp('*', 5, 5)) //, 25);
 console.log(basicOp('/', 49, 7)) //, 7);
-*/  
+*/
 
 // TITLE: 14. Convert boolean values to strings 'Yes' or 'No'.
 // DESCRIPTION: Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
-  
+
 // SOLUTION:
 /*
 const boolToWord = bool => {
@@ -336,9 +336,9 @@ console.log(boolToWord(false)) // 'No')
 // TITLE: 15. A Needle in the Haystack
 // DESCRIPTION: Write a function findNeedle() that takes an array full of junk but containing one "needle"
 // After your function finds the needle it should return a message (as a string) that says:
-// "found the needle at position " plus the index it found the needle, so: 
+// "found the needle at position " plus the index it found the needle, so:
 
-// EXAMPLE/QUESTION: 
+// EXAMPLE/QUESTION:
 // findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
 // should return "found the needle at position 5"
 
@@ -363,8 +363,8 @@ findNeedle(haystack_1)
 // DESCRIPTION: We need a function that can transform a number into a string.
 // What ways of achieving this do you know?
 
-// EXAMPLE/QUESTION: 
-// numberToString(123); // returns '123';`   
+// EXAMPLE/QUESTION:
+// numberToString(123); // returns '123';`
 // numberToString(999); // returns '999';`
 
 // SOLUTION:
@@ -405,7 +405,7 @@ console.log(squareSum([1, 2, 2]))
 // efficient system to identify ships with a heavy booty on board. Unfortunattely for you, people weigh a lot this days,
 // so how do you know if a ship if full of gold and not people? You begin with writing a generic Ship class:
 
-// EXAMPLE/QUESTION: 
+// EXAMPLE/QUESTION:
 
 // function Ship(draft,crew) {
 //     this.draft = draft;
@@ -490,7 +490,7 @@ Test.assertEquals(new Ball("super").value, "super");
 // Ghost objects are instantiated without any arguments.
 // Ghost objects are given a random color attribute of white" or "yellow" or "purple" or "red" when instantiated
 
-// EXAMPLE/QUESTION: 
+// EXAMPLE/QUESTION:
 // ghost = new Ghost();
 // ghost.color //=> "white" or "yellow" or "purple" or "red"
 
@@ -532,9 +532,9 @@ console.log(ghost4.color)
 // TITLE: 21. Basic subclasses - Adam and Eve
 
 // DESCRIPTION: According to the creation myths of the Abrahamic religions, Adam and Eve were the first Humans to wander the Earth.
-// You have to do God's job. 
-// The creation method must return an array of length 2 containing objects (representing Adam and Eve). 
-// The first object in the array should be an instance of the class Man. The second should be an instance of the class Woman. 
+// You have to do God's job.
+// The creation method must return an array of length 2 containing objects (representing Adam and Eve).
+// The first object in the array should be an instance of the class Man. The second should be an instance of the class Woman.
 // Both objects have to be subclasses of Human. Your job is to implement the Human, Man and Woman classes.
 
 // EXAMPLE/QUESTION:
@@ -554,12 +554,12 @@ class Woman extends Human{}
 
 // TITLE: 22. Jenny's secret message
 
-// DESCRIPTION: Jenny has written a function that returns a greeting for a user. 
-// However, she's in love with Johnny, and would like to greet him slightly different. 
+// DESCRIPTION: Jenny has written a function that returns a greeting for a user.
+// However, she's in love with Johnny, and would like to greet him slightly different.
 // She added a special case to her function, but she made a mistake. Can you help her?
 
 
-// EXAMPLE/QUESTION: 
+// EXAMPLE/QUESTION:
 // BEFORE:
 // function greet(name){
 //     return "Hello, " + name + "!";
@@ -574,3 +574,27 @@ class Woman extends Human{}
 //       return "Hello, my love!";
 //       return "Hello, " + name + "!";
 //   }
+
+// TITLE: 22. Convert number to reversed array of digits
+
+// DESCRIPTION: Given a random number:
+// You have to return the digits of this number within an array in reverse order.
+
+// Example: 348597 => [7,9,5,8,4,3]
+
+// SOLUTION:
+function digitize(n) {
+    // convert to string
+    let stringNumber = n.toString()
+    console.log(stringNumber)
+    // add to array
+    let stringArray = stringNumber.split('')
+    console.log(stringArray)
+    // reverse the string array
+    let reversed = stringArray.reverse()
+    console.log(reversed)
+    // convert string to number
+    console.log(reversed.join())
+}
+
+console.log(digitize(348597))
