@@ -1,6 +1,6 @@
 # My Kata Solutions
 
-## Codewars Github page 
+## Codewars 
 
 [Codewars GitHub_Page](https://github.com/codewars/codewars.com/wiki "Codewars")  
 
